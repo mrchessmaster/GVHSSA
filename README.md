@@ -1,2 +1,5 @@
 # GVHSSA
-This is the github repository for Greater Vancouver High School Science Olympics
+This is the repository for all technical files pertinent to the Greater Vancouver High School Science Olympics
+
+* Includes 
+

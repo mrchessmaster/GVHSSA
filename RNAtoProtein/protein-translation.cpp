@@ -20,11 +20,13 @@ int main(){
 	// 	}
 	// }
 	// cout << code << endl;
-
-	int t; cin >> t;
+	int t; 
+	cout << "Number of RNA substrings: ";
+	cin >> t;
 	string str = "";
 	string substr;
 	for (int i=0; i<t; i++) {
+		cout << "Input RNA" << i+1 << ": ";
 		cin >> substr;
 		str += substr;
 	}

@@ -20,16 +20,18 @@ int main(){
 	// 	}
 	// }
 	// cout << code << endl;
-	int t; 
-	cout << "Number of RNA substrings: ";
-	cin >> t;
-	string str = "";
-	string substr;
-	for (int i=0; i<t; i++) {
-		cout << "Input RNA" << i+1 << ": ";
-		cin >> substr;
-		str += substr;
-	}
+	
+	//int t; 
+	//cout << "Number of RNA substrings: ";
+	//cin >> t;
+	//string str = "";
+	//string substr;
+	//for (int i=0; i<t; i++) {
+	//	cout << "Input RNA" << i+1 << ": ";
+	//	cin >> substr;
+	//	str += substr;
+	//}
+	string str; cout << "RNA: "; cin >> str;
 	string encoding = "";
 	while(str.length()>0) {
 		if (str.substr(0,3)=="UUU") {encoding += "Phe-";} 
@@ -98,6 +100,6 @@ int main(){
 		else if (str.substr(0,3)=="GGG") {encoding += "Gly-";} 		
 		str.erase(0,3);
 	}
-	cout << encoding << endl;
+	cout << "Peptide: " << encoding << endl;
 	return 0;
 }

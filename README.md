@@ -16,19 +16,23 @@ This code takes in an **RNA string**, and produces the **first peptide chain** g
 3. Go to the **Command Line (Windows: Start -> All Programs -> Assessories -> Command Prompt) / Terminal (Mac)**, and into your `RNAtoProtein` folder using `cd`
 
 In this example, I saved the `RNAtoProtein` folder in my `Desktop`'s `GVHSSAcode` folder.
-Therefore I would do (on a Mac it would look like):
+Therefore, in your command line:
 ```
-Last login: Sun Feb 28 20:41:02 on ttys000
-Davids-MacBook-Pro-3:~ chessmaster$ cd Desktop
-Davids-MacBook-Pro-3:Desktop chessmaster$ cd GVHSSAcode
-Davids-MacBook-Pro-3:GVHSSAcode chessmaster$ cd RNAtoProtein
+cd Desktop
+cd GVHSSAcode
+cd RNAtoProtein
 ```
-What you type should go after the `$` sign.
+What you type should go after the `$` sign on Mac, `..>` on Windows(i think).
+
+4. install g++ by typing:
+```
+sudo apt-get install g++
+```
 
 4. Type the following code to run:
 ```
-Davids-MacBook-Pro-3:RNAtoProtein chessmaster$ g++ protein-translation.cpp -o protein-translation.run
-Davids-MacBook-Pro-3:RNAtoProtein chessmaster$ ./protein-translation.run
+g++ protein-translation.cpp -o protein-translation.run
+./protein-translation.run
 ```
 
 5. It is running! Input your RNA and get your protein! Sample input with start and stop codons:
